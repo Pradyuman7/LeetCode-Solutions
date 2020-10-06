@@ -10,6 +10,16 @@ class Solution {
         Output: 6
     */
 
+    /*
+        This is a greedy solution which greedily
+        finds the blocks of space between two integers
+        and add them accordingly.
+        This is only done when those two integers
+        are larger than ones in between.
+
+        Time cmoplexity: O(n)
+        Space complexity: O(1)
+    */
     public int trap(int[] heights) {
         int water = 0;
         int startMax = 0, endMax = 0;
